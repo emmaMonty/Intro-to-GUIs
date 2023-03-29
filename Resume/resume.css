@@ -1,0 +1,273 @@
+/* set up for page */
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    margin: 0;
+    background: #3772ff;
+}
+/* header section */
+.header{
+    margin: 0;
+    background-color: #df2935;
+    height: 145px;
+}
+/* text for header section */
+.name{
+    font-size:30px;
+    font-weight: bolder;
+}
+.email{
+    margin-top: 72px;
+}
+.section-title{
+    font-size: xx-large;
+    font-weight: bold;
+    background-color: silver;
+}
+/* education section */
+
+/* formatting for education section */
+.education{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.education-card{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    color:white;
+    background-color: #080708;
+    margin: 15px;
+    height: 200px;
+    width: 200px;
+}
+.image_pic{
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 100px;
+}
+
+/* text section for education */
+.info{
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+}
+.Degree{
+    display: flex;
+    justify-content: flex;
+    font-size: 20px;
+    margin-bottom: 2px;
+}
+.school{
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+
+/* images for education */
+.picture{
+    width: 75px;
+    height: 60px;
+    background-image: url(hogwarts.png);
+    background-position: center;
+    background-size: 60px;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+.pic_2{
+    width: 75px;
+    height: 60px;
+    background-image: url(MU_logo.jpg);
+    background-position: center;
+    background-size: 85px;
+    background-repeat: no-repeat;
+}
+.picture3{
+    width: 75px;
+    height: 60px;
+    background-image: url(chip.jpg);
+    background-position: center;
+    background-size: 65px;
+    background-repeat: no-repeat;
+}
+/* Job section */
+
+/* text for jobs */
+.place{ 
+    font-size: 25px;
+}
+.Title{
+    font-size: 20px;
+    background-color: grey;
+}
+.combined{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 100px;
+}
+.discription{
+    font-size:15px;
+}
+
+/* layout section for jobs */
+.jobs{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly; 
+}
+.jobs-card{
+    margin: 15px;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 200px;
+    width: 200px;
+    background-color: #fdca40;
+}
+
+/* Images for jobs */
+.logo_1{
+    width:68px;
+    height:55px;
+    background-image: url(niantic.png);
+    background-size: 57px;
+    background-repeat: no-repeat;
+}
+.logo_2{
+    width:68px;
+    height:55px;
+    background-image: url(meme.png);
+    background-size: 60px;
+    background-repeat: no-repeat;
+}
+.logo_3{
+    width:68px;
+    height:55px;
+    background-image: url(Bandai.png);
+    background-size: 55px;
+    background-repeat: no-repeat;
+}
+.logo_4{
+    width:68px;
+    height:55px;
+    background-image: url(Damage_Control.webp);
+    background-size: 55px;
+    background-repeat: no-repeat;
+}
+.logo_5{
+    width:68px;
+    height:55px;
+    background-image: url(VanHelsing.jpg);
+    background-size: 48px;
+    background-repeat: no-repeat;
+}
+
+/* Technology section */
+.Languages{
+    margin: 15px;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/* Images for tech section */
+.tech-bubbles1{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    background-color:white;
+    background-image: url(Raku.png);
+    background-size: 125px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tech-bubbles2{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    background-color:white;
+    background-image: url(verilog.png);
+    background-size: 125px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tech-bubbles3{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    background-color:white;
+    background-image: url(postscript.jpg);
+    background-size: 125px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tech-bubbles4{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    background-color:white;
+    background-image: url(prolog.jpg);
+    background-size: 160px;
+    background-repeat: no-repeat;
+    background-position-x: 3px;
+
+}
+.tech-bubbles5{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    background-color:white;
+    background-image: url(python.jpg);
+    background-size: 111px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tech-bubbles6{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    background-color:white;
+    background-image: url(C.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tech-bubbles7{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    background-color:white;
+    background-image: url(C++.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tech-bubbles8{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    background-color:white; 
+    background-image: url(java.jpg);
+    background-size: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.tech-bubbles9{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    background-color:white;
+    background-image: url(Julia.png);
+    background-size: 110px;
+    background-position: center;
+    background-repeat: no-repeat;
+}

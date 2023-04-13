@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="bulider.css">
+        <script src="bulider.js" defer></script>
+        <script src="writeRecipeToFile.js" defer></script>
+        <title>Assignment 4 Recipe Card Builder</title>
+    </head>
+    <body>
+        <header>
+            <h1>Recipe Card Builder</h1>
+        </header>
+        <main>
+            <!-- the input section -->
+            <div class="name">
+                <input id="title" type="text"  placeholder="Recipe name"/>
+            </div>
+            <!-- the ingredient class -->
+            <div class="Food">
+                <input id="Food-input" type="text"  aria-description="Click the button or press enter to add ingredient" 
+                placeholder="Ingredient name"/>
+                <button id="Food-button">Save</button>
+            </div>
+            <div class ="Food-area">
+                <section id="Food-list">
+                </section>
+            </div>
+            <!-- the direction class -->
+            <div class="directions">
+                <input id="directions-input" type="text" aria-description="Click the button or press enter to add instruction"
+                 placeholder="Instructions"/>
+                <button id="directions-button">Save</button>          
+            </div>
+            <div class="directions-area" aria-describedby="Click the instruction or press enter on it to remove" tabindex="1">
+                <section id="directions-list" tabindex="1">
+
+                </section>
+            </div> 
+        </main>
+        <!-- the buttons  -->
+        <div class ="the_buttons">
+            <button id="reset-button" aria-description="Click the button or press enter to reset screen"> Reset </button>
+            <button id="export-button"aria-description="Click the button or press enter to save recipe">Save Recipe Card</button>
+        </div>
+        <!-- the error message -->
+        <div id="error-message" aria-live="polite"></div>
+    </body>
+</html>

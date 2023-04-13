@@ -1,0 +1,144 @@
+/* the whole document settings */
+*{
+    box-sizing: border-box;
+    background-color: #83C5BE;
+ }
+
+ html{
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ /* title */
+ header{
+   display: flex;
+   justify-content: center;
+   font-size: x-large;
+ }
+
+ /* recipe name section */
+ .name{
+    display: flex;
+ }
+  /* name input section */
+ .name > input{
+    flex: 1;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: none;
+    padding: 8px 16px;
+    background-color: white;
+ }
+/* the ingredient section */
+ .Food{
+    display: flex;
+ }
+ /* textbar */
+ .Food > input {
+    flex: 1;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: none;
+    padding-left: 16px;
+    background-color: white;
+ }
+ /* save button */
+ .Food> button{
+    border: 1px solid black;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    padding: 8px 16px;
+    cursor: pointer;
+    background-color: gray;
+ }
+ /* the new stuff */
+ .Food-area{
+  display:flex;
+ }
+ .Food-area > Food-list{
+   display: flex;
+   flex-wrap: wrap;
+   overflow-y: auto;
+ }
+ #Food-list > button{
+   display: block;
+   width: 100%;
+   border: none;
+   background-color: grey;
+   padding: 14px 28px;
+   font-size: 16px;
+   cursor: pointer;
+   text-align: center;
+ }
+ /* the instruction section */
+ .directions{
+    display: flex;
+ }
+ /* the text bar */
+ .directions > input {
+    flex: 1;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-right: none;
+    padding-left: 16px;
+    background-color: white;
+ }
+ /* the save button */
+ .directions > button {
+    border: 1px solid black;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    padding: 8px 16px;
+    cursor: pointer;
+    background-color: gray;
+ } 
+ .directions-area{
+   display:flex;
+ }
+ #directions-list > button{
+   display: block;
+   width: 100%;
+   border: none;
+   background-color: grey;
+   padding: 14px 28px;
+   font-size: 16px;
+   cursor: pointer;
+   text-align: center;
+ }
+ /* the error message section */
+ #error-message {
+   position: fixed;
+   padding: 16px;
+   background-color: rgb(150, 0, 0);
+   color: white;
+   font-weight: bold;
+   bottom: 0px;
+   left: 0px;
+   right: 0px;
+   transform: translateY(200px);
+ }
+ 
+ #error-message[data-open="true"] {
+   transform: translateY(0px);
+ }
+/* the buttons */
+  #reset-button{
+   padding: 15px 32px;
+   background-color: gray;
+   font-size: large;
+ }
+
+ #export-button{
+   padding: 15px 32px;
+   background-color: gray;
+   font-size: large;
+ }

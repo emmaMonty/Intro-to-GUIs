@@ -1,0 +1,217 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    background-color: #3c6e71;
+    --secondary-color: #353535;
+    --color-on-seconday: #d9d9d9;
+    --primary-color: grey;
+    --color-on-primary: white;
+}
+.headers{
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    color:white;
+}
+.textbox{
+    position: relative;
+    margin: 15px;
+    background-color: #353535;
+    color: white;
+    width:500px;
+    height: 350px;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+.textbox, .html{   
+    left: 0px;
+}
+
+/* Navbar */
+.section1{
+    position: relative;
+}
+.navbar, .navbarDrawer{
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 16px;
+    background-color: var(--secondary-color);
+    color: white;
+    justify-content: space-between;
+    z-index: 999;
+}
+
+/* Navbar Drawer */
+.section2{
+    position: relative;
+    height: 200px;
+    background-color: var(--secondary-color);
+
+}
+.NavbarDrawer{
+    position: absolute;
+    box-sizing: border-box;
+    top: 58px;
+    left: -300px;
+    width: 300px;
+    bottom: 0px;
+    background-color: var(--secondary-color);
+    color: var(--color-on-secondary);
+    transition: all .3s ease;
+    display:flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 8px;
+}
+
+.NavbarDrawer.open{
+    left: 0px;
+    color:#d9d9d9;
+}
+
+/* Buttons */
+.buttons{
+    display: flex;
+    justify-content: space-around;
+}
+.button{
+    background-color: var(--primary-color);
+    color: var(--color-on-primary);
+    padding: 8px 32px;
+    text-transform: uppercase;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 24px;
+    transition: all .3s ease;
+}
+
+button:hover{
+    background-color: var(--light-background);
+}
+.floating-action-button{
+    width: 64px;
+    height: 64px;
+    background-color: var(--primary-color);
+    color: var(--color-on-primary);
+    border-radius: 64px;
+    border: none;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, .24), 0px 1px 2px rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.floating-action-button:hover{
+    background-color: var(--light-background);
+}
+
+/* Image carousel */
+.carousel{
+    overflow: hidden;
+    width: 100%;
+}
+ .carousel .image-slider{
+    display: flex;
+    transform: translateX(-200px);
+}
+
+/* Loading Spinner 1 */
+.dots-loader{
+    display: flex;
+    gap: 16px;
+}
+
+@keyframes dots {
+    50%{
+        transform: translateY(-16px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.dot,.dot1,.dot2{
+    background-color: var(--secondary-color);
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+   
+}
+.dot.active{
+    animation: dots;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.dot1.active{
+    animation: dots;
+    animation-duration: 1.33s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+.dot2.active{
+    animation: dots;
+    animation-duration: 1.66s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+/* Loading spinner 2 */
+.spinny-loader{
+    position: absolute;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+ 
+ .spinny{
+     position: absolute;
+     border: 8px solid rgba(0,0,0,.1);
+     border-left-color: #555;
+     border-radius: 50%;
+     width: 50px;
+     height: 50px;
+     animation: spin 1s ease-in-out infinite;
+}
+ @keyframes spin {
+     to{
+         transform: rotate(360deg);
+     }
+}
+ .spinny-loader.active{
+    display: flex;
+    justify-content: center;
+     opacity: 1;
+     visibility: visible;
+}
+ .spinny-loader{
+     opacity: 1;
+     visibility: visible;
+}
+.section3{
+    width:25px;
+    height:75px;
+}
+/* Loading spinner 3 */
+.wordy-loader{
+    font-size: x-large;
+    animation-name: animate-word;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    text-transform: uppercase;
+}
+@keyframes animate-word{
+    0%{ color: rgba(0, 38, 58, 255);}
+    25%{ color: rgba(0, 38, 58, 191);}
+    50%{ color: rgba(0, 38, 58, 128);}
+    75%{ color: rgba(0, 38, 58, 64);}
+    100%{ color: rgba(0, 38, 58, 0);}
+}

@@ -1,0 +1,14 @@
+.wordy-loader{
+    font-size: x-large;
+    animation-name: animate-word;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    text-transform: uppercase;
+}
+@keyframes animate-word{
+    0%{ color: rgba(0, 38, 58, 255);}
+    25%{ color: rgba(0, 38, 58, 191);}
+    50%{ color: rgba(0, 38, 58, 128);}
+    75%{ color: rgba(0, 38, 58, 64);}
+    100%{ color: rgba(0, 38, 58, 0);}
+}

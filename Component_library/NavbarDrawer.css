@@ -1,0 +1,19 @@
+.NavbarDrawer{
+    position: absolute;
+    box-sizing: border-box;
+    top: 58px;
+    left: -300px;
+    width: 300px;
+    bottom: 0px;
+    background-color: var(--secondary-color);
+    color: var(--color-on-secondary);
+    transition: all .3s ease;
+    display:flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 8px;
+}
+
+.NavbarDrawer.open{
+    left: 0px;
+}

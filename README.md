@@ -1,5 +1,5 @@
 # Intro-to-GUIs
 
-All of my projects when I started creating guis
+All of my projects when I started creating GUIs
 
-languages used are javascript, HTML, and css
+languages used are javascript, HTML, and css.
